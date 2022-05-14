@@ -25,7 +25,7 @@ define('FORCE_SSL_ADMIN', true);
 // ** MySQL 设置 - 具体信息来自您正在使用的主机 ** //
 /** WordPress数据库的名称 */
 // ** MySQL settings - You can get this info from your web host ** //
-$db = parse_url($_ENV["DATABASE_URL"]);
+$db = parse_url(postgresql://postgres:ph7jfCJiwpcx8VhNvLRr@containers-us-west-38.railway.app:6261/railway);
 
 /** The name of the database for WordPress */
 define('DB_NAME', trim($db["path"],'/'));
