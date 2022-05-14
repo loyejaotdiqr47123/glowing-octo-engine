@@ -18,26 +18,18 @@
  * @package WordPress
  */
 
-$_SERVER['HTTPS'] = 'on';
-define('FORCE_SSL_LOGIN', true);
-define('FORCE_SSL_ADMIN', true);
-
 // ** MySQL 设置 - 具体信息来自您正在使用的主机 ** //
 /** WordPress数据库的名称 */
-// ** MySQL settings - You can get this info from your web host ** //
-$db = parse_url($_ENV["DATABASE_URL"]);
+define('DB_NAME', 'database_name_here');
 
-/** The name of the database for WordPress */
-define('DB_NAME', trim($db["path"],'/'));
+/** MySQL数据库用户名 */
+define('DB_USER', 'username_here');
 
-/** MySQL database username */
-define('DB_USER', $db["user"]);
+/** MySQL数据库密码 */
+define('DB_PASSWORD', 'password_here');
 
-/** MySQL database password */
-define('DB_PASSWORD', $db["pass"]);
-
-/** MySQL hostname */
-define('DB_HOST', $db["host"]);
+/** MySQL主机 */
+define('DB_HOST', 'localhost');
 
 /** 创建数据表时默认的文字编码 */
 define('DB_CHARSET', 'utf8');
