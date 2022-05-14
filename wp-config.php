@@ -28,16 +28,16 @@ define('FORCE_SSL_ADMIN', true);
 $db = parse_url(postgresql://postgres:ph7jfCJiwpcx8VhNvLRr@containers-us-west-38.railway.app:6261/railway);
 
 /** The name of the database for WordPress */
-define('DB_NAME', trim($db["path"],'/'));
+define('DB_NAME', trim(railway,'/'));
 
 /** MySQL database username */
-define('DB_USER', $db["user"]);
+define('DB_USER',postgresql);
 
 /** MySQL database password */
-define('DB_PASSWORD', $db["pass"]);
+define('DB_PASSWORD', ph7jfCJiwpcx8VhNvLRr);
 
 /** MySQL hostname */
-define('DB_HOST', $db["host"]);
+define('DB_HOST', containers-us-west-38.railway.app:6261);
 
 /** 创建数据表时默认的文字编码 */
 define('DB_CHARSET', 'utf8');
